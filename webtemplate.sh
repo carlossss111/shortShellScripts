@@ -18,11 +18,14 @@ else #Else execute the command.
 
     #Creates the boilerplate HTML file and code.
     touch ./index.html
-    echo -e '<!DOCTYPE html>\n\n<html lang="en" xmlns="http://www.w3.org/1999/xhtml">\n<head>\n  <meta charset="utf-8" />\n  <meta name="viewport" content="width=device-width, initial-scale=1.0">\n  <meta name="description" content="DESCRIPTION HERE"/>\n  <link href="./css/styles.css" type="text/css" rel="stylesheet" />\n  <title>TITLE HERE</title>\n</head>\n<body>\n</body>\n<html>' > ./index.html
+    echo -e '<!DOCTYPE html>\n\n<html lang="en" xmlns="http://www.w3.org/1999/xhtml">\n<head>\n  <meta charset="utf-8" />\n  <meta name="viewport" content="width=device-width, initial-scale=1.0">\n  <meta name="description" content="DESCRIPTION HERE"/>\n  <link href="./css/styles.css" type="text/css" rel="stylesheet" />\n  <title>TITLE HERE</title>\n  <script src="./scripts/script.js"></script>\n</head>\n<body>\n</body>\n</html>' > ./index.html
 
-    #WIP
+    #Creates the boilerplate CSS file and code.
     mkdir ./css
     touch ./css/styles.css
+    echo -e '* {\n   margin: 0;\n   padding: 0;\n   outline: 0;\n}' > ./css/styles.css
+
+    #Creates JS file
     mkdir ./scripts
     touch ./scripts/script.js
 
