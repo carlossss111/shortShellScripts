@@ -29,7 +29,13 @@ else #Else execute the command.
     mkdir ./scripts
     touch ./scripts/script.js
 
+    #Create image directory
+    mkdir ./images
+
     #Completion message.
     echo Templated repository named $repoName has been created in $loc
+
+    #Initialise git, print error message if that fails.
+    git init || echo Git is not installed, git repository not initialised.
 fi
 exit
