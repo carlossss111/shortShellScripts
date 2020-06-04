@@ -1,5 +1,9 @@
 #!/bin/bash
 
+###Symlink /usr/local/bin. (with "ln -s /home/daniel/PATH/TO/webtemplate.sh /usr/local/bin/mkweb" ran as root.)
+###Script written by Daniel, 05/20.
+###Creates a new git repository at $loc with boilerplate HTML,CSS and JS.
+
 if [ -z "$1" ] #If the arguement is empty
 then
     echo The name of the new repository is required as an arguement.
