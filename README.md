@@ -6,4 +6,5 @@ This is a collection of short shell scripts that I have created for personal use
 * __killdiscord.sh__ - _Called globally as 'kdiscord' on my PC_, kills the discord application (it freezes sometimes) and immediately reopens it.
 * __for.bashrc/defaultdir__ - _Copy/paste to ~/.bashrc_, sets the default working directory for each terminal session.
 * __for.bashrc/prompt__ - _Copy/paste to ~/.bashrc_, sets PS1 to a different ANSI escape sequence, giving the terminal prompt a theme (also depending on whether root or local).
+
 Most of these will probably need tweaking for PCs, but they are very short so that will not be difficult or time-consuming. 
