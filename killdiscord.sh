@@ -1,6 +1,7 @@
 #!/bin/bash
 
-###Script written by Daniel DD/MM
+###Symlink /usr/local/bin. (with "ln -s /home/daniel/PATH/TO/webtemplate.sh /usr/local/bin/kdiscord" ran as root.)
+###Script written by Daniel 06/20
 ###Discord is unruly and sometimes doesn't open back up when closed unless killed. I could try to fix it but meh this is faster.
 ##Kills discord and loads it straight after.
 
@@ -14,5 +15,5 @@ PID=`echo $numbersInLine | head -c 4`
 echo Killing discord with PID:$PID
 kill $PID
 
-#Ability to reopen coming soon
-#/usr/bin/flatpak run --branch=stable --arch=x86_64 --command=discord com.discordapp.Discord
+#Relaunches discord. The parantheses and ampersand mean that it runs in a seperate window from the terminal.
+(/usr/bin/flatpak run --branch=stable --arch=x86_64 --command=discord com.discordapp.Discord &)
