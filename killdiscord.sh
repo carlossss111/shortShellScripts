@@ -1,6 +1,6 @@
 #!/bin/bash
 
-###Symlink /usr/local/bin. (with "ln -s /home/daniel/PATH/TO/webtemplate.sh /usr/local/bin/kdiscord" ran as root.)
+###Symlink /usr/local/bin. (with "ln -s /home/daniel/PATH/TO/killdiscord.sh /usr/local/bin/kdiscord" ran as root.)
 ###Script written by Daniel 06/20
 ###Discord is unruly and sometimes doesn't open back up when closed unless killed. I could try to fix it but meh this is faster.
 ##Kills discord and loads it straight after.
