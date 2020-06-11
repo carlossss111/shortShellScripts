@@ -179,6 +179,7 @@ fi
 
 echo "Writing to $customFile ..."
 
+echo "#!/bin/bash" >> "$customFile"
 echo "#Bash prompt customiser by Daniel @https://github.com/carlossss111" >> "$customFile"
 echo "#`date`" >> "$customFile"
 echo 'if [ `whoami` == "root" ]' >> "$customFile"
