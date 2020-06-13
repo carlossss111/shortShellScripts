@@ -7,10 +7,10 @@
 
 #First matching line is grepped from the snapshort of current processes.
 taskLine=`ps aux | grep -m 1 /app/discord/Discord`
-#Numbers with 4 digits are grepped.
-numbersInLine=`echo $taskLine | grep -o -m 1 '[0-9][0-9][0-9][0-9]'`
+#Numbers with 4-5 digits are grepped.
+numbersInLine=`echo $taskLine | egrep -o -m 1 '[0-9]{4,5}'`
 #First group of numbers (the PID) is stored.
-PID=`echo $numbersInLine | head -c 4`
+PID=`echo $numbersInLine | head -c 5`
 #The process is killed.
 echo Killing discord with PID:$PID
 kill $PID
