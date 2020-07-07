@@ -6,5 +6,6 @@ This is a collection of short shell scripts that I have created for personal use
 * __killdiscord.sh__ - _Called globally as 'kdiscord' on my PC_, kills the discord application (it freezes sometimes) and immediately reopens it.
 * __scripttemplate.sh__ - _Called globalled as 'mkshell' on my PC_, makes a shell script with the correct template and permissions.
 * __promptcustomiser.sh__ - Runs through the process of changing the PS1 and appending it to bash.rc. Has different colour options, an option to include the header or not and an option set a default starting directory.
+* __themeswitcher.sh__ - _Called globally as 'darkmode' on my PC_, switches between a dark theme and a light theme for the GUI (Linux Mint Cinnamon). The two themes can be edited through the variables at the very beginning of the script if needed.
 
 Some of these might need tweaking for different systems, but they are very short so that will not be difficult or time-consuming. 
