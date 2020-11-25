@@ -9,5 +9,6 @@ This is a collection of short shell scripts that I have created for personal use
 * __promptcustomiser.sh__ - Runs through the process of changing the PS1 and appending it to bash.rc. Has different colour options, an option to include the header or not and an option set a default starting directory.
 * __themeswitcher.sh__ - _Called globally as 'darkmode' on my PC_, switches between a dark theme and a light theme for the GUI (Linux Mint Cinnamon). The two themes can be edited through the variables at the very beginning of the script if needed.
 * __newvimwindow.sh__ - _Called globally as 'nvim' on my PC_, loads the vim text editor in another terminal window so I can have two terminals on the go at once with less effort.
+* __bashaliases__ = _Loaded from .bashrc on my PC_, list of bash aliases I use.
 
 Some of these might need tweaking for different systems, but they are very short so that will not be difficult or time-consuming. 
