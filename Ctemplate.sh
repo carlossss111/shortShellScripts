@@ -13,6 +13,17 @@ else #executes bulk of command
 		name="$1.c"
 	fi
 
+	#checks if the file already exists
+	if [ -e $name ]
+	then
+		read -p "The file already exists, would you like to overwrite it? y/n: " overwrite
+		if [ "$overwrite" = "n" ]
+		then
+		echo "File unchanged."
+			exit
+		fi
+	fi
+
 	touch "$name"
 	echo -e "#include <stdio.h>\n\nint main(int argc, char **argv){\n\n\t/*instructions here*/\n\n\treturn 0;\n}" > "$name"
 	echo "C file created as $name"
