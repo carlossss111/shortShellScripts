@@ -6,14 +6,14 @@
 #Light Mode
 lBorders="Mint-Y"
 lControls="Mint-Y"
-lDesktop="Mint-X-Sand"
+lDesktop="Mint-Y-Sand"
 lBackground="file:///home/daniel/Pictures/wallpapers/lightWallpaper.png"
 
 #Dark Mode
 dBorders="Mint-Y-Dark"
 dControls="Mint-Y-Dark"
 dDesktop="Mint-Y-Dark-Sand"
-dBackground="file:///home/daniel/Pictures/wallpapers/darkWallpaper.png"
+dBackground="file:///home/daniel/Pictures/wallpapers/darkWallpaper.jpg"
 
 #If already light mode, switch to dark mode.
 if [ `gsettings get org.cinnamon.theme name` == "'$lDesktop'" ]
@@ -22,7 +22,7 @@ then
     gsettings set org.cinnamon.desktop.interface gtk-theme "$dControls"
     gsettings set org.cinnamon.desktop.wm.preferences theme "$dBorders"
     gsettings set org.gnome.desktop.background picture-uri "$dBackground"
-    echo "Changed to the light theme!"
+    echo "Changed to the dark theme!"
 
 #Else already dark mode, switch to light mode.
 else
@@ -30,5 +30,5 @@ else
     gsettings set org.cinnamon.desktop.interface gtk-theme "$lControls"
     gsettings set org.cinnamon.desktop.wm.preferences theme "$lBorders"
     gsettings set org.gnome.desktop.background picture-uri "$lBackground"
-    echo "Changed to the dark theme!"
+    echo "Changed to the light theme!"
 fi
