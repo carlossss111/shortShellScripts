@@ -6,6 +6,8 @@ sudo ln -s /PATH/TO/script.sh /usr/local/bin/NAME
 ## Scripts
 `Ctemplate.sh` makes a file with the C program boilerplate.
 
+`degitifier.sh` _takes 1 Arg for parent directory_, recursively moves through subdirectories removing '.git' files.
+
 `helloworld.sh` echoes hello world.
 
 `killdiscord.sh` kills the discord application (it freezes sometimes) and immediately reopens it.
@@ -31,4 +33,4 @@ sudo apt update
 sudo apt install xclip
 ```
 
-__themeswitcher__ is based on the [Cinnamon](https://en.wikipedia.org/wiki/Cinnamon_(desktop_environment)) (4.8.6) desktop environment and I wouldn't expect it to work of the box on any other desktop.
+__themeswitcher__ is based on the [Cinnamon](https://en.wikipedia.org/wiki/Cinnamon_(desktop_environment)) (4.8.6) desktop environment and I wouldn't expect it to work out of the box on any other desktop.
