@@ -14,6 +14,8 @@ if [ ! -z "$2" ];then
 	token="$2"
 fi
 
-echo $str | sed "s/$token/\\\\$token/g"
+temp=$(echo $str | sed "s/\\\\$token/!!TEMP!!/g")
+temp=$(echo $temp | sed "s/$token/\\\\$token/g")
+echo $temp | sed "s/!!TEMP!!/\\\\$token/g"
 
 exit 0
