@@ -8,6 +8,8 @@ sudo ln -s /PATH/TO/script.sh /usr/local/bin/NAME
 
 `degitifier.sh` _takes 1 Arg for parent directory_, recursively moves through subdirectories removing '.git' files.
 
+`discoverPrinters.sh` toggles discoverability of LAN printers on/off with CUPS.
+
 `escapify.sh` _takes 1 Arg for string, another OPTIONALLY for token_, puts an escape character before every instance of the token (double-quotes by default).
 
 `helloworld.sh` echoes hello world.
