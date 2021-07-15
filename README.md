@@ -14,9 +14,11 @@ sudo ln -s /PATH/TO/script.sh /usr/local/bin/NAME
 
 `helloworld.sh` echoes hello world.
 
+`key+2.sh` _takes one-to-two args: [string to encrypt|'-d'] [with -d option: string to decrypt]_, it's just a +2 caesar cipher that's it.
+
 `killdiscord.sh` kills the discord application (it freezes sometimes) and immediately reopens it.
 
-`listgen.sh` _takes two to four Args: [FSTRING] [optional: START] [END] [optional: STEP]_, produces a list of n strings with any '?'s being replaced with n. '\\?' is not changed.
+`listgen.sh` _takes two-to-four Args: [FSTRING] [optional: START] [END] [optional: STEP]_, produces a list of n strings with any '?'s being replaced with n. '\\?' is not changed.
 
 `newvimwindow.sh` loads the vim text editor in a new terminal window .
 
