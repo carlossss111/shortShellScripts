@@ -1,0 +1,11 @@
+[Unit]
+Description=Run system76-power profile on startup. Daniel R 2024.
+After=system76-power.service
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/system76-power profile battery
+Restart=no
+
+[Install]
+WantedBy=default.target
