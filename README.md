@@ -25,6 +25,8 @@ systemctl enable NAME --now
 
 `themeswitcher.sh` _requires `cinnamon`_, switches between dark and light mode desktop environment themes.
 
+`updatehosts.sh` _requires `wget`_, _takes one optional Arg for a non-default URL_, downloads a hostfile and replaces /etc/hosts. Allows blocking ads and malware hosts.
+
 ## Unuseful Scripts
 `Ctemplate.sh` makes a file with the C program boilerplate.
 
