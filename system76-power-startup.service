@@ -4,7 +4,7 @@ After=system76-power.service
 
 [Service]
 Type=simple
-ExecStart=/usr/bin/system76-power profile battery
+ExecStart=/usr/bin/system76-power-startup.sh
 Restart=no
 
 [Install]

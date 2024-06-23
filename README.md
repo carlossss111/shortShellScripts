@@ -9,6 +9,7 @@ To install a service, copy to systemd and enable:
 cp /PATH/TO/name.service /etc/systemd/system/NAME
 systemctl daemon-reload
 systemctl enable NAME --now
+ln /PATH/TO/related.sh /usr/bin/related.sh
 ```
 ## Useful Scripts
 `countcode.sh` _takes 1 Arg for the CSV path_, counts Lines of Code (LOC) for each commit in the history of a git repository. Outputs to a CSV so that LOC can be mapped over time.
