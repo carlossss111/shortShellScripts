@@ -11,6 +11,8 @@ alias ls='ls --color=auto'
 alias grep='grep --color=auto'
 alias vi='vim'
 alias s76='sudo system76-power'
+alias githubToken='gpg -d ~/.tokens/github.gpg'
+alias irc='irssi'
 
 # Prompt
 # Backup: PS1='[\u@\h \W]\$ '
@@ -30,5 +32,5 @@ PS1="\h | \[\e[1;93m\]\`getParent\`\W $ \[\e[m\]"
 export PS1
 
 # Misc
-setfont default8x16 -d 2>/dev/null #doubles font size in tty virtual terminal
 . "$HOME/.cargo/env" #enables rust env
+. /opt/asdf-vm/asdf.sh #enables proton GE manager

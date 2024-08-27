@@ -28,6 +28,8 @@ ln /PATH/TO/related.sh /usr/bin/related.sh
 
 `updatehosts.sh` _requires `wget`_, _takes one optional Arg for a non-default URL_, downloads a hostfile and replaces /etc/hosts. Allows blocking ads and malware hosts.
 
+`tokenpush.sh` _requires `git` and `gpg`_, unencrypts a token file and pushes to a git repository with it.
+
 ## Unuseful Scripts
 `Ctemplate.sh` makes a file with the C program boilerplate.
 
@@ -50,5 +52,10 @@ ln /PATH/TO/related.sh /usr/bin/related.sh
 
 ## Systemd Services
 `system76-power-startup.service` _requires `system76-power` and it's sub-dependencies_, runs the battery saver profile on startup instead of the balanced profile.
+
+## RCs
+`bashrc` barebones rc with aliases and a custom prompt.
+
+`vimrc` plugin manager and rebinds for quick compiling.
 
 #### Author: Daniel R
