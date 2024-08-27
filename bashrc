@@ -13,6 +13,7 @@ alias vi='vim'
 alias s76='sudo system76-power'
 alias githubToken='gpg -d ~/.tokens/github.gpg'
 alias irc='irssi'
+alias gamermode='PS1="$ ";clear'
 
 # Prompt
 # Backup: PS1='[\u@\h \W]\$ '
