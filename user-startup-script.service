@@ -1,0 +1,11 @@
+[Unit]
+Description=Run user startup scripts Dan R 24
+After=lightdm.service
+
+[Service]
+Type=simple
+ExecStart=/opt/user-startup-script.sh
+Restart=no
+
+[Install]
+WantedBy=default.target
