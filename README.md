@@ -56,6 +56,6 @@ ln /PATH/TO/related.sh /usr/bin/related.sh
 ## RCs
 `bashrc` barebones rc with aliases and a custom prompt.
 
-`vimrc` plugin manager and rebinds for quick compiling.
+`vimrc` plugins, rebinds, and commands for vim. Useful especially when compiling.
 
 #### Author: Daniel R
