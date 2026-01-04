@@ -16,6 +16,10 @@ ln /PATH/TO/related.sh /usr/bin/related.sh
 
 `discoverPrinters.sh` _requires `cups`_, toggles discoverability of LAN printers on/off with CUPS.
 
+`encrypted_write.sh` _requires `gpg`, _takes 1 arg for file, another OPTIONALLY for an editor_, decrypts a password-protected gpg file, opens an editor, reencrypts it, then shreds the decrypted buffer.
+
+`encrypted_read.sh` _requires `gpg`, _takes 1 arg for file_, as above but read-only with `less`.
+
 `escapify.sh` _takes 1 Arg for string, another OPTIONALLY for token_, puts an escape character before every instance of the token (double-quotes by default).
 
 `listgen.sh` _requires `xclip`_, _takes two-to-four Args: [FSTRING] [optional: START] [END] [optional: STEP]_, produces a list of n strings with any '?'s being replaced with n. '\\?' is not changed.
@@ -26,9 +30,10 @@ ln /PATH/TO/related.sh /usr/bin/related.sh
 
 `themeswitcher.sh` _requires `cinnamon`_, switches between dark and light mode desktop environment themes.
 
+`tokenpush.sh` _requires `git` and `gpg`_, unencrypts a token file and pushes to a git repository with it.
+
 `updatehosts.sh` _requires `wget`_, _takes one optional Arg for a non-default URL_, downloads a hostfile and replaces /etc/hosts. Allows blocking ads and malware hosts.
 
-`tokenpush.sh` _requires `git` and `gpg`_, unencrypts a token file and pushes to a git repository with it.
 
 ## Unuseful Scripts
 `Ctemplate.sh` makes a file with the C program boilerplate.
